@@ -168,7 +168,7 @@ window.onload = () => {
         twoS.animate(twoKeyframes, timing);
         threeS.animate(threeKeyframes, timing);
         fourS.animate(fourKeyframes, timing);
-
+        console.log("scrolled!")
 
       } else {
         servicel.style.color = "white";
@@ -194,6 +194,9 @@ window.onload = () => {
 
 
         var timing = { duration: 1000, fill: "forwards" }
+
+        console.log("false")
+
 
         oneW.animate(oneKeyframes, timing);
         twoW.animate(twoKeyframes, timing);
@@ -261,37 +264,33 @@ window.onload = () => {
 
 
 
+  pieces[3] = [];
+  pieces[3]["image"] = "images/ecoleap.png";
+  pieces[3]["name"] = "Ecoleap";
+  pieces[3]["description"] = "Ecoleap.ca was designed and built for a registered energy advisor specializing in energy solutions in the GTA. It's a responsive website that was built in 2019 using wordpress. Some changes to the site may have been made by the owner.  " + "<br><br>" + str.link("https://ecoleap.ca");
+  pieces[3]["tag"] = ["Web Development,  Client"];
+
   pieces[2] = [];
-  pieces[2]["image"] = "images/ecoleap.png";
-  pieces[2]["name"] = "Ecoleap";
-  pieces[2]["description"] = "Ecoleap.ca was designed and built for a registered energy advisor specializing in energy solutions in the GTA. It's a responsive website that was built in 2019 using wordpress. Some changes to the site may have been made by the owner.  " + "<br><br>" + str.link("https://ecoleap.ca");
-  pieces[2]["tag"] = ["Web Development,  Client"];
-
-
-
-  // pieces[1] = [];
-  // pieces[1]["image"] = "images/LOGO.png";
-  // pieces[1]["name"] = "We Explore";
-  // pieces[1]["description"] ="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. " + "<br><br>" + str.link("") ;
-  // pieces[1]["tag"] = ["Web Development"];
-
+  pieces[2]["image"] = "images/v4.PNG";
+  pieces[2]["name"] = "Directional Civil Construction ";
+  pieces[2]["description"] = "This is a logo made for DCC, a startup telecommunications company in Toronto. After being involved in group meetings, we discussed their company’s values and goals. From there, I developed different variations of possible logos. This was the desired and selected choice." + "<br><br>";
+  pieces[2]["tag"] = ["Graphic Design,  Client"];
 
   pieces[1] = [];
-  pieces[1]["image"] = "images/v4.PNG";
-  pieces[1]["name"] = "Directional Civil Construction ";
-  pieces[1]["description"] = "This is a logo made for DCC, a startup telecommunications company in Toronto. After being involved in group meetings, we discussed their company’s values and goals. From there, I developed different variations of possible logos. This was the desired and selected choice." + "<br><br>";
-  pieces[1]["tag"] = ["Graphic Design,  Client"];
-
-  pieces[0] = [];
-  pieces[0]["image"] = "images/website.PNG";
-  pieces[0]["name"] = "This Website";
-  pieces[0]["description"] = "This website is my most recent piece. It was created to represent me, my work and my services. It is a responsive website built from scratch using HTML, CSS, and Javascript."
+  pieces[1]["image"] = "images/website.PNG";
+  pieces[1]["name"] = "This Website";
+  pieces[1]["description"] = "This website was created in 2020 to represent me, my work and my services. It is a responsive website built from scratch using HTML, CSS, and Javascript."
     + "<br><br>" + "<a href ='" + "/mywebsite.html" + "'" + "class='" + "viewproj" + "'" + ">" + "View Project" + "</a>";
   // project.link( "pareshmaramp.ca/mywebsite.html")
 
-  pieces[0]["tag"] = ["Web Development,  Graphic Design,  Motion Design"];
+  pieces[1]["tag"] = ["Web Development,  Graphic Design,  Motion Design"];
 
-
+  pieces[0] = [];
+  pieces[0]["image"] = "images/LOGO.png";
+  pieces[0]["name"] = "We Explore";
+  pieces[0]["description"] ="We Explore is a progressive web app that was built during my final year at Humber college in 2020. The construction of the project details page is still in development, however you can still check out what has been done so far!" 
+  + "<br><br>" + "<a href ='" + "/weexplore.html" + "'" + "class='" + "viewproj" + "'" + ">" + "View Project" + "</a>" ;
+  pieces[0]["tag"] = ["Web Development, Graphic Design"];
 
   for (var i = 0; i < pieces.length; i++) {
 
